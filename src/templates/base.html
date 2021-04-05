@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+        <meta charset="UTF-8">
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"
+              media="screen">
+        <title>{{ the_title }}</title>
+    {% endblock %}
+</head>
+
+<nav>
+    {% block navbar %}
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Home!</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="posts">Posts</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="logout">logout</a></li>
+                        <li><a href="login">login</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    {% endblock %}
+</nav>
+<body>
+<div class="container">
+    {% block content %}
+            <h2>This is part of base template</h2>
+    {% endblock %}
+
+</div>
+</div>
+</body>
+
+</html>

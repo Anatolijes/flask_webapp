@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <table>
+            {% for post in posts %}
+
+                    <li>{{ post.title }}<br>{{ post.content }}</li>
+
+            {% endfor %}
+          </table>
+    </div>
+{% endblock %}
